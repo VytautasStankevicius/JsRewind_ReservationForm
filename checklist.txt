@@ -1,0 +1,47 @@
+Tikslas: Sukurti JavaScript rezervacijos web aplikaciją.
+
+Funkcionalumas:
+Vartotojas pasirenka kalendoriuje mėnesį
+Paspaudzia dieną
+Modale issoka forma, kurioje iraso savo varda, el pasta ir zinute ir spaudzia mygtuka patvirtinti
+Po rezervacijos ivedimo i konkrecia diena, diena calendoriuje pazymima raudonai ir i ja naujos rezervacijos ivesti negalima, bet modale galime parodyti esama rezervacija arba ja atsaukti
+Duomenys saugomi localsorage
+Naudoti tik Vanilla Js
+Butu labai gerai, tureti estetiska ir responsive UI, bei naudoti webpack su sass ir moduliu importavimu, bei exportavimu
+
+////////////////Kalendorius
+[x]Menesiu pavadinimu handlinimas
+[x]Siu metu dabartinis menuo ir dienos
+[x]Siu metu praeitas menuo ir sekantis
+[x]Sios dienos rodymas
+[x]Pritaikymas datu LT savaites dienoms
+[x]Praeito menesio ir sekancio dienos neaktyvios
+[x]Galimybe nueiti i praeita ir sekanti menesius su buttonais
+[x]Kalendoriaus minimalus css
+////////////////Rezervacijos forma
+[]Apsirasyti forma ir jos inputus
+  Neveikia cancel mygtukas jeigu dienoje nera submito
+[x]Kiekviena sio menesio diena clickable, issaukia forma
+[x]Pasiemimas duomenu is visu triju inputu
+[x]Galimybe uzpildyti forma tik viena karta
+[x]Checkinimas kuria diena buvo priimta forma, jos pridejimas i objekta kartu
+[x]Ju storinimas localstorage
+[]Formos css
+////////////////Rezervacijos info modalas
+[x]Uzkrovus puslapi tikrinti ar yra atvaizduojamos datos pridetos prie uzpildytos formos
+[x]Pritaikymas atskiro stiliaus jeigu ta diena jau buvo pildyta forma
+[x]Tikrinimas ar yra atvaizduota data prideta prie uzpildytos formos kaskart einant i kita menesi
+[x]Atvaizdavimas objekte storintu duomenu jeigu bus paspausta diena su jau uzpildyta forma
+[x]Galimybe isjungti modala
+////////////////Validatoriai
+[]Standartiniai formu validatoriai
+  *Komentatoriaus varde gali buti tik raides nuo a iki z
+  *Komentatoriaus varda sudaro nuo 3 iki 10 raidziu
+  *Komentaro ilgis negali buti ilgesnis nei 255 simboliai
+  *Komentare negali buti naudojamos HTML israiskos
+///////////////Webpack
+[]Refaktorinimas su webpack
+[]Webpack setup
+[NO]sass
+  Negaliu jo pasileist vaniloj ir jau atsibodo ieskot kodel.Lieka css
+[]Komponentu sukarpymas

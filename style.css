@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 2rem;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+}
+h1 {
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-weight: 600;
+}
+.calendar {
+  margin: auto;
+  width: 98%;
+  max-width: 380px;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+}
+.calendar header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calendar nav {
+  display: flex;
+  align-items: center;
+}
+.calendar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.calendar ul li {
+  width: calc(100% / 7);
+  margin-top: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.days {
+  font-weight: 600;
+}
+.dates li.today {
+  color: white;
+  background-color:blueviolet
+}
+
+.dates li {
+  width: 2rem;
+  height: 2rem;
+  content: "";
+}
+
+.dates li:hover {
+  background-color: aquamarine;
+  
+}
+.dates li.inactive {
+  color: #ccc;
+  pointer-events:none;
+}
+/* ////////////////////////////////////////////////////////// */
+
+.formHolder {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #eventForm label, #eventForm input, #eventForm textarea {
+  display: block;
+  margin-bottom: 10px;
+ }
+ 
+ #eventForm button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ /* //////////// */
+ .stored-date {
+  background-color: coral;
+ }
+
+ /* //Modal */
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+ }
+ 
+ .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+ }
+ 
+ .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+ }
+ 
+ 
+
