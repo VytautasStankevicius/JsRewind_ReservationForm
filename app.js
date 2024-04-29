@@ -102,13 +102,13 @@ const email = document.getElementById('email');
 const message = document.getElementById('message');
 const formContainer = document.querySelector('.formHolder');
 
+document.getElementById('cancelButton').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.querySelector('.formHolder').style.display = 'none';
+ });
+
 form.addEventListener('submit', function(event) {
  event.preventDefault(); 
-
- document.getElementById('cancelButton').addEventListener('click', function(event) {
- event.preventDefault();
- document.querySelector('.formHolder').style.display = 'none';
-});
 
  const formData = {
     name: formName.value,

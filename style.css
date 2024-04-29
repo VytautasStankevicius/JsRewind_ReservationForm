@@ -46,6 +46,7 @@ h3 {
   margin-top: 25px;
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 
 .days {
@@ -53,7 +54,7 @@ h3 {
 }
 .dates li.today {
   color: white;
-  background-color:blueviolet
+  background-color:blueviolet;
 }
 
 .dates li {
@@ -81,13 +82,33 @@ h3 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
  }
  
  #eventForm label, #eventForm input, #eventForm textarea {
   display: block;
   margin-bottom: 10px;
+  border:1px solid #ccc;
+  padding:5px;
+  border-radius:5px;
+  width:100%;
+  resize:none;
  }
  
+ .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  flex: 1;
+}
+
+.buttons button#cancelButton {
+  background-color: #ccc;
+  color: #000;
+}
+
  #eventForm button {
   background-color: #007bff;
   color: white;
@@ -106,7 +127,7 @@ h3 {
  .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   width: 100%;
@@ -121,13 +142,20 @@ h3 {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  min-height: 100px;
+  border-radius: 10px;
+  position: relative;
+  text-align:center;
  }
  
  .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
+  position: absolute;
+  right: 15px;
+  top: 10px;
  }
  
  .close:hover,
@@ -135,6 +163,10 @@ h3 {
   color: black;
   text-decoration: none;
   cursor: pointer;
+ }
+
+ #reservationText {
+  padding-right:20px;
  }
  
  
