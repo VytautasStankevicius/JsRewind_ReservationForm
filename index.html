@@ -33,9 +33,9 @@
     </div>
     <div class="formHolder" style="display: none;">
       <form id="eventForm">
-        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="text" id="name" name="name" minlength="3" maxlength="10" pattern="[A-Za-z]{3,10}" placeholder="Name" required>
         <input type="email" id="email" name="email" placeholder="Email"required>
-        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+        <textarea id="message" name="message" minlength="1" maxlength="255" placeholder="Your message" required></textarea>
         <button type="submit">Submit</button>
         <button type="button" id="cancelButton">Cancel</button>
       </form>

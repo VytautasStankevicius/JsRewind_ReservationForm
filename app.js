@@ -102,6 +102,19 @@ const email = document.getElementById('email');
 const message = document.getElementById('message');
 const formContainer = document.querySelector('.formHolder');
 
+
+//validatorius
+document.getElementById('eventForm').addEventListener('submit', function(event) {
+  const message = document.getElementById('message').value;
+  const htmlRegex = /<[^>]*>?/gm;
+ 
+  if (htmlRegex.test(message)) {
+     alert('Message cannot contain HTML symbols.');
+     event.preventDefault();
+  }
+ });
+
+ 
 document.getElementById('cancelButton').addEventListener('click', function(event) {
   event.preventDefault();
   document.querySelector('.formHolder').style.display = 'none';

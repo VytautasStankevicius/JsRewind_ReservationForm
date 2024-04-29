@@ -19,14 +19,13 @@ Butu labai gerai, tureti estetiska ir responsive UI, bei naudoti webpack su sass
 [x]Galimybe nueiti i praeita ir sekanti menesius su buttonais
 [x]Kalendoriaus minimalus css
 ////////////////Rezervacijos forma
-[]Apsirasyti forma ir jos inputus
-  Neveikia cancel mygtukas jeigu dienoje nera submito
+[x]Apsirasyti forma ir jos inputus
 [x]Kiekviena sio menesio diena clickable, issaukia forma
 [x]Pasiemimas duomenu is visu triju inputu
 [x]Galimybe uzpildyti forma tik viena karta
 [x]Checkinimas kuria diena buvo priimta forma, jos pridejimas i objekta kartu
 [x]Ju storinimas localstorage
-[]Formos css
+[x]Formos css
 ////////////////Rezervacijos info modalas
 [x]Uzkrovus puslapi tikrinti ar yra atvaizduojamos datos pridetos prie uzpildytos formos
 [x]Pritaikymas atskiro stiliaus jeigu ta diena jau buvo pildyta forma
@@ -34,7 +33,7 @@ Butu labai gerai, tureti estetiska ir responsive UI, bei naudoti webpack su sass
 [x]Atvaizdavimas objekte storintu duomenu jeigu bus paspausta diena su jau uzpildyta forma
 [x]Galimybe isjungti modala
 ////////////////Validatoriai
-[]Standartiniai formu validatoriai
+[x]Standartiniai formu validatoriai
   *Komentatoriaus varde gali buti tik raides nuo a iki z
   *Komentatoriaus varda sudaro nuo 3 iki 10 raidziu
   *Komentaro ilgis negali buti ilgesnis nei 255 simboliai
